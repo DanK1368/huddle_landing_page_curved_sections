@@ -1,0 +1,116 @@
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.6rem;
+  }
+
+  /*Header*/
+
+  .main-header {
+    img {
+      width: 15rem;
+    }
+
+    button {
+      font-size: 1.5rem;
+    }
+  }
+
+  /*Hero Section*/
+
+  .hero-section {
+    .hero-text {
+      h1 {
+        max-width: 50ch;
+      }
+      p {
+        max-width: 52ch;
+      }
+      button {
+        padding: 1.5rem 6rem;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  /*Diagram Section*/
+
+  .diagram-section {
+    @include flex(row, space-around, center);
+    width: 90%;
+    min-height: 40vh;
+  }
+
+  /*Grow Together Section*/
+
+  .illustration {
+    display: none;
+  }
+
+  .illustration-desktop {
+    width: 100%;
+    display: block;
+  }
+
+  .grow-together-wrapper {
+    width: 100%;
+  }
+
+  .grow-together-section {
+    @include flex(row, space-around, center);
+    min-height: 60vh;
+
+    img {
+      width: 50%;
+      order: 2;
+    }
+
+    .grow-together-text-wrapper {
+      order: 1;
+      text-align: left;
+      padding: 0rem 5rem 0rem 0rem;
+    }
+  }
+
+  /*Flowing Conversation Section*/
+
+  .flowing-conversation-section {
+    @include flex(row, space-around, center);
+    min-height: 60vh;
+
+    img {
+      width: 50%;
+    }
+
+    .flowing-conversation-text-wrapper {
+      text-align: left;
+      padding: 0rem 0rem 0rem 5rem;
+    }
+  }
+
+  /*Your Users Sections*/
+
+  .your-users-section {
+    @include flex(row, space-around, center);
+    min-height: 60vh;
+
+    img {
+      width: 50%;
+      order: 2;
+    }
+
+    .your-users-text-wrapper {
+      order: 1;
+      text-align: left;
+      padding: 0rem 5rem 0rem 0rem;
+    }
+  }
+
+  /*CTA Section*/
+
+  .cta-section {
+    button {
+      padding: 1.5rem 6rem;
+      border-radius: 30px;
+    }
+  }
+}

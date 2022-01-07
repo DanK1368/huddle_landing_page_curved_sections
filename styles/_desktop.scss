@@ -1,0 +1,108 @@
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: calc(2rem + 1vw);
+  }
+  h2 {
+    font-size: calc(1.5rem + 1vw);
+  }
+  h3 {
+    font-size: 7rem;
+  }
+
+  /*Illustration Images*/
+
+  .illustration-images {
+    max-width: 30%;
+  }
+
+  /*Header*/
+
+  .main-header {
+    padding: 5rem 0rem;
+  }
+
+  /*Hero-Section*/
+
+  .hero-section {
+    padding-top: 10rem;
+
+    .hero-section-image-wrapper {
+      max-width: 60%;
+      padding-top: 7rem;
+    }
+  }
+
+  /*Grow Together Section*/
+
+  .diagram-section {
+    padding-top: 6rem;
+  }
+
+  /*Grow Together Section*/
+
+  .grow-together-section {
+    .grow-together-text-wrapper {
+      p {
+        max-width: 50ch;
+      }
+    }
+  }
+
+  /*Flowing Conversation*/
+
+  .flowing-conversation-section {
+    .flowing-conversation-text-wrapper {
+      p {
+        max-width: 58ch;
+      }
+    }
+  }
+
+  /*Your Users Sections*/
+
+  .your-users-section {
+    .your-users-text-wrapper {
+      p {
+        max-width: 58ch;
+      }
+    }
+  }
+
+  /*CTA Section*/
+
+  .cta-section {
+    h2 {
+      font-size: calc(2rem + 1vw);
+    }
+  }
+
+  /*Footer Section*/
+
+  .main-footer-wrapper {
+    @include flex(row, space-around, center);
+    min-height: 50vh;
+
+    .footer-section-1 {
+      order: 2;
+      margin-top: 9rem;
+
+      form {
+        @include flex(row, flex-start, center);
+
+        input {
+          width: 50%;
+          margin-right: 3rem;
+        }
+      }
+    }
+
+    .footer-section-2 {
+      order: 1;
+      padding: 10rem;
+    }
+
+    .social-media-wrapper {
+      padding: 5rem 0rem;
+    }
+  }
+}

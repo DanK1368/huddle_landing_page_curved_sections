@@ -1,0 +1,296 @@
+@media screen and (max-width: 4000px) {
+  //   main {
+  //     max-width: 70rem;
+  //     margin: auto;
+  //     display: grid;
+  //   }
+
+  /*Header*/
+
+  .main-header {
+    min-height: 10vh;
+    @include flex(row, space-between, center);
+    width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+
+    img {
+      width: 11rem;
+    }
+
+    button {
+      color: $primary-color;
+      background: white;
+      border-radius: 20px;
+      padding: 0.5rem 2rem;
+      border: 1px solid $primary-color;
+      font-size: 1.3rem;
+      box-shadow: 0px 0px 5px rgba(255, 82, 191, 0.5);
+
+      &:hover {
+        color: $accent-color;
+        border: 1px solid $accent-color;
+        box-shadow: 0px 0px 5px rgba(255, 143, 216, 0.5);
+        cursor: pointer;
+      }
+    }
+  }
+
+  /*Hero Section*/
+
+  .hero-section {
+    min-height: 100vh;
+    width: 90%;
+    margin: auto;
+    @include flex(column, space-around, center);
+    padding-top: 2rem;
+
+    .hero-text {
+      @include flex(column, center, center);
+      text-align: center;
+
+      h1 {
+        text-align: center;
+        max-width: 20ch;
+      }
+
+      p {
+        max-width: 41ch;
+        padding: 4rem 0rem;
+      }
+
+      button {
+        color: $secondary-font-color;
+        font-weight: 600;
+        background: $primary-color;
+        border-radius: 20px;
+        padding: 1rem 4rem;
+        border: 0px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+          background: $accent-color;
+          cursor: pointer;
+        }
+      }
+    }
+    .hero-section-image-wrapper {
+      padding: 3rem 0rem;
+    }
+  }
+
+  /*Diagram Section*/
+
+  .diagram-section {
+    width: 60%;
+    margin: auto;
+    @include flex(column, space-around, center);
+    min-height: 60vh;
+
+    .diagram-text-wrapper {
+      text-align: center;
+      padding: 3rem 0rem;
+      p {
+        opacity: 0.6;
+      }
+      img {
+        width: 3rem;
+      }
+    }
+  }
+
+  /*Grow Together Section*/
+
+  .illustration-desktop {
+    display: none;
+  }
+
+  .illustration {
+    width: 100%;
+  }
+
+  .grow-together-wrapper {
+    background: rgb(246, 251, 255);
+  }
+
+  .grow-together-section {
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    @include flex(column, center, center);
+
+    .grow-together-text-wrapper {
+      padding-top: 10rem;
+      text-align: center;
+      p {
+        padding: 2.5rem 0rem;
+        max-width: 40ch;
+      }
+    }
+  }
+
+  /*Flowing Conversation Section*/
+
+  .flowing-conversation-section {
+    width: 90%;
+    margin: auto;
+    min-height: 90vh;
+    @include flex(column, center, center);
+    padding-top: 2rem;
+
+    .flowing-conversation-text-wrapper {
+      padding-top: 10rem;
+      text-align: center;
+      p {
+        padding: 2.5rem 0rem;
+        max-width: 40ch;
+      }
+    }
+  }
+
+  /*Your Users Sections*/
+
+  .your-users-wrapper {
+    background: rgb(246, 251, 255);
+  }
+
+  .your-users-section {
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    @include flex(column, center, center);
+
+    .your-users-text-wrapper {
+      padding-top: 10rem;
+      text-align: center;
+      p {
+        padding: 2.5rem 0rem;
+        max-width: 40ch;
+      }
+    }
+  }
+
+  /*CTA section */
+
+  .cta-section {
+    width: 90%;
+    margin: auto;
+    min-height: 60vh;
+    @include flex(column, center, center);
+
+    h2 {
+      font-size: $header1;
+      text-align: center;
+      padding-bottom: 4rem;
+    }
+
+    button {
+      color: $secondary-font-color;
+      font-weight: 600;
+      background: $primary-color;
+      border-radius: 20px;
+      padding: 1rem 4rem;
+      border: 0px;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+
+      &:hover {
+        background: $accent-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  /*Footer Section*/
+
+  .main-footer-wrapper {
+    min-height: 90vh;
+    @include flex(column, space-between, flex-start);
+    background: $primary-font-color;
+    p,
+    h2 {
+      color: $secondary-font-color;
+    }
+  }
+
+  .footer-section-1 {
+    width: 85%;
+    margin: auto;
+
+    .footer-text-wrapper {
+      p {
+        padding: 2rem 0rem;
+        max-width: 38ch;
+        line-height: 1.6;
+      }
+    }
+
+    form {
+      @include flex(column, center, flex-end);
+
+      input {
+        width: 100%;
+        padding: 1rem 1rem;
+        border-radius: 5px;
+        border: 0px;
+        margin: 1rem 0rem;
+
+        &:focus,
+        &:hover {
+          outline: 1.5px solid $secondary-color;
+          cursor: pointer;
+        }
+      }
+
+      button {
+        color: $secondary-font-color;
+        font-weight: 600;
+        background: $primary-color;
+        border-radius: 5px;
+        padding: 1rem 4rem;
+        border: 0px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+          background: $accent-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .footer-section-2 {
+    width: 85%;
+    margin: auto;
+    padding-top: 3rem;
+
+    .footer-company-wrapper {
+      img {
+        width: 20rem;
+      }
+      p {
+        padding: 2rem 0rem;
+        max-width: 45ch;
+        line-height: 1.6;
+      }
+    }
+
+    .contact-wrapper {
+      @include flex(row, flex-start, center);
+      padding: 0.5rem 0rem;
+      p {
+        padding-left: 2rem;
+      }
+    }
+
+    .social-media-wrapper {
+      padding: 3rem 0rem;
+      width: 10rem;
+      @include flex(row, space-between, center);
+
+      svg path:hover {
+        fill: lightskyblue;
+        cursor: pointer;
+      }
+    }
+  }
+}
